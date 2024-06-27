@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Reminder</title>
+</head>
+
+<body>
+    <div class="clock">
+        <h1>
+            Reminder App
+        </h1>
+        <h3>
+            Set a reminder
+        </h3>
+        <div class="time" id="time">
+            00:00:00
+        </div>
+        <div class="input-row">
+            <div class="input-field">
+                <label for="alarmDate">
+                    Select Date:
+                </label>
+                <input type="date" id="alarmDate" class="alarm-input" min="">
+            </div>
+            <div class="input-field">
+                <label for="alarmTime">
+                    Select Time:
+                </label>
+                <input type="time" id="alarmTime" class="alarm-input">
+            </div>
+            <div class="input-field">
+                <label for="reminderName">Reminder Name:</label>
+                <input type="text" id="reminderName" placeholder="Enter reminder name" />
+            </div>
+            <button id="setAlarm">
+                Set
+            </button>
+        </div>
+        <div class="alarms" id="alarms">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
